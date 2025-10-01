@@ -1,0 +1,300 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #1a1a1a, #333333);
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Fade-in Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s forwards;
+}
+
+.fade-in[data-delay] {
+  animation-delay: attr(data-delay);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px 60px;
+  background: linear-gradient(135deg, #222, #111);
+  background-attachment: fixed;
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto 20px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #ffdd57;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero .tagline {
+  font-size: 20px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff813f, #ff4b2b);
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255,75,43,0.4);
+}
+
+/* Note */
+.note {
+  max-width: 800px;
+  margin: 30px auto 50px auto;
+  padding: 20px;
+  background: #222;
+  border-left: 5px solid #ff813f;
+  border-radius: 12px;
+  font-size: 16px;
+  text-align: center;
+  color: #ffdd57;
+}
+
+/* Features */
+.features {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ffdd57;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  background: linear-gradient(145deg, #2c2c2c, #3a3a3a);
+  padding: 30px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+.feature-card h3 {
+  font-size: 22px;
+  margin: 15px 0;
+  color: #ffdd57;
+}
+
+.feature-card p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+/* Support Section */
+.support {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.story-card, .support-card {
+  background: linear-gradient(145deg, #2c2c2c, #3a3a3a);
+  padding: 30px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.story-card:hover, .support-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+.story-card h2, .support-card h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #ffdd57;
+}
+
+.story-card p, .support-card p {
+  font-size: 16px;
+  color: #ddd;
+  margin-bottom: 12px;
+}
+
+/* Razorpay / Buy Button */
+.buy-coffee {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff813f, #ff4b2b);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.buy-coffee:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255,75,43,0.4);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: #111;
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .support {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .cta-btn, .buy-coffee {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.downloads {
+  text-align: center;
+  margin: 80px auto;
+}
+
+.downloads h2 {
+  font-size: 36px;
+  color: #ffdd57;
+  margin-bottom: 15px;
+}
+
+.downloads p {
+  color: #ccc;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.downloads .browser-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, #4caf50, #43a047);
+  color: #fff;
+  padding: 16px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 12px;
+  text-decoration: none;
+  margin: 10px;
+  transition: all 0.3s ease;
+}
+
+.downloads .browser-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(67,160,71,0.4);
+}
+
+/* Installation Instructions Section */
+.installation {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #222;
+  border-radius: 12px;
+  padding: 30px;
+  color: #ddd;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.installation h2 {
+  color: #ffdd57;
+  margin-bottom: 15px;
+}
+
+.installation ol, .installation ul {
+  margin-left: 20px;
+}
+
+.installation li {
+  margin-bottom: 10px;
+}
+
+.installation code {
+  background: #333;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}

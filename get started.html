@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlockMate - Get Started</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #333333);
+      color: #fff;
+      line-height: 1.6;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      display: block;
+      margin: 0 auto 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      font-size: 48px;
+      color: #ffdd57;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    h2 {
+      font-size: 32px;
+      color: #ffdd57;
+      margin-bottom: 20px;
+    }
+
+    ol {
+      text-align: left;
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      padding-left: 20px;
+      color: #ccc;
+      font-size: 18px;
+    }
+
+    ol li {
+      margin-bottom: 15px;
+    }
+
+    .note {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #222;
+      border-left: 5px solid #ff813f;
+      border-radius: 12px;
+      font-size: 16px;
+      color: #ffdd57;
+      text-align: center;
+    }
+
+    .downloads {
+      margin: 40px 0;
+    }
+
+    .downloads a.browser-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff813f, #ff4b2b);
+      color: #fff;
+      padding: 16px 32px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      margin: 10px;
+    }
+
+    .downloads a.browser-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(255,75,43,0.4);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 14px;
+      color: #aaa;
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+
+      ol {
+        font-size: 16px;
+      }
+
+      .downloads a.browser-btn {
+        font-size: 16px;
+        padding: 12px 24px;
+      }
+
+      .logo {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo & Hero -->
+  <img src="icons/yt.png" alt="BlockMate Logo" class="logo">
+  <h1>Get Started with BlockMate</h1>
+  <p class="note">⚠️ After installing, BlockMate may need a moment to adjust. If ads appear, refresh the page.</p>
+
+  <!-- Direct Install Section -->
+  <section class="downloads">
+    <h2>Install Directly</h2>
+    <p>Click below to install BlockMate for your browser directly:</p>
+    <a href="https://chrome.google.com/webstore/detail/blockmate-extension/your-chrome-id" target="_blank" class="browser-btn">
+      <i class="fab fa-chrome"></i> Install for Chrome
+    </a>
+    <a href="https://microsoftedge.microsoft.com/addons/detail/blockmate/lfcmokaldfabeianfaplgndmoaomiiod" target="_blank" class="browser-btn">
+      <i class="fab fa-edge"></i> Install for Edge
+    </a>
+  </section>
+
+  <!-- Unpacked Version Section -->
+  <section class="downloads">
+    <h2>Install Unpacked Version</h2>
+    <ol>
+      <li>Download the <strong>unpacked BlockMate folder</strong>.</li>
+      <li>Open your browser's extensions page.</li>
+      <li>Enable <strong>Developer Mode</strong> (toggle in top right).</li>
+      <li>Click <strong>Load Unpacked</strong> and select the downloaded BlockMate folder.</li>
+      <li>The extension will appear in your browser and is ready to use.</li>
+    </ol>
+    <a href="https://github.com/YASHUDAYBHAT/BlockMate/archive/refs/heads/main.zip" target="_blank" class="browser-btn">
+      <i class="fas fa-download"></i> Download Unpacked Version
+    </a>
+  </section>
+
+  <footer>
+    &copy; 2025 BlockMate. All rights reserved. YouTube™ and Google™ are trademarks of their respective owners.
+  </footer>
+
+</body>
+</html>
