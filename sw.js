@@ -1,6 +1,6 @@
 self.options = {
-    "domain": "eechicha.com",
-    "zoneId": 9963794
+    "domain": "pertawee.net",
+    "zoneId": 9963835
 }
 self.lary = ""
-importScripts('https://eechicha.com/act/files/service-worker.min.js?r=sw')
+importScripts('https://pertawee.net/act/files/service-worker.min.js?r=sw')
